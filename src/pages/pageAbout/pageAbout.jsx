@@ -13,7 +13,7 @@ export default function AboutApp() {
     <>
       <Nav />
       <Container className="about-container">
-        <AboutBody>
+        <AboutBody className="about-body">
           <AboutMe />
           <Techs />
           <Portfolio />

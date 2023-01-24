@@ -74,17 +74,31 @@ input {
 
   .about-container{
     @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
-      height: 400vh;
+      height: 2000px;
       width: 100vw;
       overflow-x: hidden;
     }
   }
 
   .about-container{
-    @media (min-width: 361px) and (max-width: 1430px) {
-      height: 200vh;
+    @media (min-height: 501px) and (max-height: 970px) and (min-width: 350px) and (max-width: 1430px) {
+      height: 2000px;
       width: 100vw;
       overflow-x: hidden;
+    }
+  }
+
+  .about-body{
+    @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
+      height: 1800px;
+      width: 100vw;
+    }
+  }
+
+  .about-body{
+    @media (min-height: 501px) and (max-height: 970px) and (min-width: 350px) and (max-width: 1430px) {
+      height: 1800px;
+      width: 100vw;
     }
   }
 `;

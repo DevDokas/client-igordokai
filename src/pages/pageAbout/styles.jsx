@@ -55,17 +55,17 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 320px) and (max-width: 420px) and (min-height: 600px) and (max-height: 850px) {
+  @media (min-height: 501px) and (max-height: 970px) and (min-width: 350px) and (max-width: 1430px) {
     .c1 {
-      height: 50vh;
+      height: 500px;
       display: flex;
       flex-direction: column-reverse;
       gap: 5vh;
     }
 
     .c2 {
-      min-height: 350px;
-      min-width: 280px;
+      height: 350px;
+      width: 250px;
 
       label {
         font-size: 15px;
@@ -76,52 +76,28 @@ export const Container = styled.div`
         font-size: 10px;
       }
     }
-  }
 
-  @media (min-width: 320px) and (max-width: 420px) and (min-height: 800px) and (max-height: 920px) {
-    .c1 {
-      margin-top: -225px;
-      height: 50vh;
+    .portfolio-container {
       display: flex;
-      flex-direction: column-reverse;
-      gap: 5vh;
-    }
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      height: 1300px;
+      width: 250px;
 
-    .c2 {
-      min-height: 350px;
-      min-width: 280px;
-
-      label {
-        font-size: 15px;
-      }
-
-      p {
+      img {
+        height: 150px;
         width: 200px;
-        font-size: 10px;
+      }
+
+      div {
+        height: 50px;
+        width: 200px;
       }
     }
-  }
 
-  @media (min-width: 421px) and (max-width: 720px) {
-    .c1 {
-      height: 50vh;
-      display: flex;
-      flex-direction: column-reverse;
-      gap: 5vh;
-    }
-
-    .c2 {
-      min-height: 320px;
-      min-width: 280px;
-
-      label {
-        font-size: 15px;
-      }
-
-      p {
-        width: 230px;
-        font-size: 10px;
-      }
+    .portfolio-card {
+      height: 200px;
     }
   }
 `;
