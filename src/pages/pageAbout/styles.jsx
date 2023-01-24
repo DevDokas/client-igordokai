@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import * as Color from '../../config/colors';
 
 export const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-image: url('https://raw.githubusercontent.com/gist/DevDokas/3dea7d6e3815ea8b5841e5044dbfc794/raw/5455fd06a4a889744ca09518f38978279ffef190/background.svg');
   display: flex;
   justify-content: center;
