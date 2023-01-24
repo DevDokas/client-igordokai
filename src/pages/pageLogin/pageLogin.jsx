@@ -62,22 +62,24 @@ export default function Login(props) {
         <ContainerLogin>
           <PageTitle>Login</PageTitle>
           <Form onSubmit={handleSubmit}>
-            <label htmlFor="email">
-              Email:
-              <input
-                type="text"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </label>
-            <label htmlFor="password">
-              Senha:
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </label>
+            <section>
+              <label htmlFor="email">
+                Email:
+                <input
+                  type="text"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </label>
+              <label htmlFor="password">
+                Senha:
+                <input
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+              </label>
+            </section>
             <ButtonContainer>
               <LoginButton type="submit">Login</LoginButton>
               <LoginButton onClick={() => Navigate('/register')} type="button">

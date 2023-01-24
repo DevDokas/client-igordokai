@@ -6,6 +6,33 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 93vh;
+
+  section {
+    @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
+      gap: 30px;
+      height: 250px;
+      width: 250px;
+    }
+  }
+
+  input {
+    @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
+      height: 25px;
+      width: 150px;
+    }
+  }
+
+  form section {
+    @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
+      height: 120px;
+    }
+  }
+
+  form div {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+  }
 `;
 
 export const ContainerLogin = styled.section`
@@ -17,8 +44,9 @@ export const ContainerLogin = styled.section`
   width: 15vw;
   border-radius: 3vh;
   background-image: linear-gradient(
-    ${Color.SectionDarkColor},
-    ${Color.SectionColor}
+    to top,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3)
   );
 `;
 

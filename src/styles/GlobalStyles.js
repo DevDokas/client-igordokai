@@ -34,6 +34,10 @@ body {
   width: 100vw;
   overflow-x: hidden;
   background-image: linear-gradient(black, black, #141414);
+
+  @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
+    height: 100vh;
+  }
 }
 
 label{
