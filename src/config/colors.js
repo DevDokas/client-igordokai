@@ -1,9 +1,9 @@
 export const primaryColor = '#DCE8E7';
 export const primaryDarkColor = ' #141414';
 
-export const SectionColor = '#6a768d';
-export const SectionDarkColor = '#535d70';
-export const SectionDarkerColor = '#414959';
+export const SectionColor = '#212121';
+export const SectionDarkColor = '#1f1f1f';
+export const SectionDarkerColor = '#0f0f0f';
 
 export const TextColor = '#cccccc';
 export const TextDarkColor = '#060912';

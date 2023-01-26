@@ -30,6 +30,7 @@ export default createGlobalStyle`
 }
 
 body {
+  height: 100vh;
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
@@ -92,14 +93,13 @@ input {
       height: 1800px;
       width: 100vw;
     }
-  }
 
-  .about-body{
     @media (min-height: 501px) and (max-height: 970px) and (min-width: 350px) and (max-width: 1430px) {
       height: 1800px;
       width: 100vw;
     }
   }
+
 `;
 
 export const GlobalContainer = styled.section`

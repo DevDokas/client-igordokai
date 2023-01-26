@@ -6,14 +6,17 @@ import { useNavigate } from 'react-router-dom';
 import axios from '../../services/axios';
 
 import {
+  RegisterAppContainer,
   ContainerRegister,
   FormContainer,
   FormRegister,
   PageTitle,
+  ButtonContainer,
   RegisterButton,
 } from './styles';
 import Nav from '../components/Nav/Nav';
 import Loading from '../components/Loading/Loading';
+import AnimatedBackground from '../components/AnimatedBackground/AnimatedBackground';
 
 export default function Register() {
   const navigate = useNavigate();
@@ -76,11 +79,12 @@ export default function Register() {
   }
 
   return (
-    <>
+    <RegisterAppContainer>
       <Loading isLoading={isLoading} />
       <Nav />
+      <AnimatedBackground />
       <ContainerRegister>
-        <FormContainer>
+        <FormContainer className="form-container">
           <PageTitle>Registrar-se</PageTitle>
           <FormRegister onSubmit={handleSubmit}>
             <label htmlFor="nome">
@@ -115,13 +119,15 @@ export default function Register() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </label>
-
-            <RegisterButton type="submit">
-              Concluir cadastro de usuário!
-            </RegisterButton>
+            <ButtonContainer className="button-container">
+              <RegisterButton type="submit">Concluir cadastro!</RegisterButton>
+              <RegisterButton type="button" onClick={() => navigate('/login')}>
+                Voltar
+              </RegisterButton>
+            </ButtonContainer>
           </FormRegister>
         </FormContainer>
       </ContainerRegister>
-    </>
+    </RegisterAppContainer>
   );
 }

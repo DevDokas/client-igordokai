@@ -2,20 +2,164 @@ import styled from 'styled-components';
 
 import * as Color from '../../config/colors';
 
+export const RegisterAppContainer = styled.div`
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+
+  @media (max-width: 380px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .form-container {
+      height: 350px;
+      width: 250px;
+    }
+
+    .form-container h1 {
+      font-size: 20px;
+    }
+
+    section form {
+      height: 350px;
+      width: 250px;
+    }
+
+    form label {
+      font-size: 15px;
+    }
+
+    input {
+      height: 30px;
+      width: 175px;
+    }
+
+    .button-container {
+      width: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .button-container button {
+      font-size: 12px;
+      height: 40px;
+      width: 75px;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 380px) and (min-height: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .form-container {
+      height: 350px;
+      width: 250px;
+    }
+
+    .form-container h1 {
+      font-size: 20px;
+    }
+
+    section form {
+      height: 350px;
+      width: 250px;
+    }
+
+    form label {
+      font-size: 15px;
+    }
+
+    input {
+      height: 30px;
+      width: 175px;
+    }
+
+    .button-container {
+      margin-top: 0;
+      width: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .button-container button {
+      font-size: 12px;
+      height: 40px;
+      width: 75px;
+      border-radius: 10px;
+    }
+  }
+
+  @media (min-width: 381px) and (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .form-container {
+      height: 400px;
+      width: 250px;
+    }
+
+    .form-container h1 {
+      font-size: 20px;
+    }
+
+    section form {
+      height: 400px;
+      width: 250px;
+    }
+
+    form label {
+      font-size: 15px;
+    }
+
+    input {
+      height: 30px;
+      width: 175px;
+    }
+
+    .button-container {
+      margin-top: 0;
+      width: 200px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .button-container button {
+      font-size: 12px;
+      height: 40px;
+      width: 90px;
+      border-radius: 10px;
+    }
+  }
+`;
+
 export const ContainerRegister = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 93vh;
+  height: 100vh;
 `;
 
 export const FormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 40vh;
   width: 15vw;
   border-radius: 3vh;
   background-image: linear-gradient(
-    ${Color.SectionDarkColor},
-    ${Color.SectionColor}
+    to top,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3)
   );
 `;
 
@@ -30,54 +174,37 @@ export const FormRegister = styled.form`
   justify-content: center;
 
   label {
+    font-size: 1.3vh;
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5vh;
   }
 `;
 
-export const RegisterButton = styled.button`
-  height: 5vh;
-  margin-top: 2vh;
-  background-color: ${Color.SectionDarkColor};
-  border: none;
-  cursor: pointer;
+export const ButtonContainer = styled.div`
+  margin-top: 1.5vh;
   display: flex;
-  align-self: center;
-  font-size: 1rem;
-  line-height: 1;
-  margin: 20px;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 0.5vh;
-  color: ${Color.TextColor};
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: color 150ms ease-in-out;
+  flex-direction: column;
+  height: 9vh;
+  gap: 1vh;
+`;
 
-  &:after {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 100%;
-    background: ${Color.ButtonColor};
-    z-index: -1;
-    transition: width 150ms ease-in-out;
-  }
+export const RegisterButton = styled.button`
+  height: 3.5vh;
+  width: 10vw;
+  font-size: 1vh;
+  font-weight: 500;
+  border: 0;
+  border-radius: 0.3vh;
+  color: ${Color.TextColor};
+  cursor: pointer;
+  background-color: ${Color.SectionDarkerColor};
+  transition: 0.1s;
 
   &:hover {
-    color: #fff;
-  }
-
-  &:hover:after {
-    width: 110%;
+    font-weight: 700;
+    transform: scale(1.1);
+    border-bottom: 0.3vh solid ${Color.primaryColor};
+    transition: 0.1s;
   }
 `;

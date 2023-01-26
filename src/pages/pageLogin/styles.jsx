@@ -1,41 +1,119 @@
 import styled from 'styled-components';
 import * as Color from '../../config/colors';
 
+export const LoginAppContainer = styled.div`
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+`;
+
 export const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 93vh;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 
-  section {
-    @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
-      gap: 30px;
+  @media (max-width: 350px) {
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
       height: 250px;
       width: 250px;
+
+      h1 {
+        font-size: 25px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+      }
+
+      form section {
+        height: 130px;
+      }
+
+      label {
+        font-size: 15px;
+      }
+
+      input {
+        height: 30px;
+        width: 175px;
+      }
+
+      form div {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        height: 50px;
+        width: 250px;
+      }
+
+      form button {
+        border-radius: 10px;
+        height: 40px;
+        width: 75px;
+        font-size: 15px;
+      }
     }
   }
 
-  input {
-    @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
-      height: 25px;
-      width: 150px;
-    }
-  }
+  @media (min-width: 351px) and (max-width: 576px) {
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+      height: 350px;
+      width: 250px;
 
-  form section {
-    @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
-      height: 120px;
-    }
-  }
+      h1 {
+        font-size: 30px;
+      }
 
-  form div {
-    width: 150px;
-    display: flex;
-    justify-content: space-around;
+      form {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+      }
+
+      form section {
+        height: 130px;
+      }
+
+      label {
+        font-size: 20px;
+      }
+
+      input {
+        height: 30px;
+        width: 175px;
+      }
+
+      form div {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        height: 50px;
+        width: 250px;
+      }
+
+      form button {
+        border-radius: 10px;
+        height: 40px;
+        width: 75px;
+        font-size: 15px;
+      }
+    }
   }
 `;
 
-export const ContainerLogin = styled.section`
+export const ContainerLogin = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +139,15 @@ export const Form = styled.form`
   justify-content: center;
   width: 15vw;
 
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    height: 10vh;
+  }
+
   label {
+    font-size: 1.5vh;
     display: flex;
     flex-direction: column;
   }
@@ -69,55 +155,27 @@ export const Form = styled.form`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  justify-content: center;
-  gap: 2vw;
   height: 3vh;
-  width: 15vw;
+  gap: 1vw;
   margin-top: 2vh;
 `;
 
-export const LoginButton = styled.button`
-  width: 4vw;
+export const Button = styled.button`
   height: 3vh;
-  background-color: ${Color.SectionDarkColor};
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  font-size: 1rem;
-  line-height: 1;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 0.5vh;
+  width: 4.5vw;
+  font-size: 1vh;
+  font-weight: 500;
+  border: 0;
+  border-radius: 0.3vh;
   color: ${Color.TextColor};
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: color 150ms ease-in-out;
-
-  &:after {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 100%;
-    background: ${Color.ButtonColor};
-    z-index: -1;
-    transition: width 150ms ease-in-out;
-  }
+  cursor: pointer;
+  background-color: ${Color.SectionDarkerColor};
+  transition: 0.1s;
 
   &:hover {
-    color: #fff;
-  }
-
-  &:hover:after {
-    width: 110%;
+    font-weight: 700;
+    transform: scale(1.1);
+    border-bottom: 0.3vh solid ${Color.primaryColor};
+    transition: 0.1s;
   }
 `;

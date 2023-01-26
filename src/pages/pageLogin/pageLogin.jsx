@@ -9,14 +9,16 @@ import { get } from 'lodash';
 // Components
 import Nav from '../components/Nav/Nav';
 import Loading from '../components/Loading/Loading';
+import AnimatedBackground from '../components/AnimatedBackground/AnimatedBackground';
 import * as actions from '../../store/modules/auth/actions';
 import {
+  LoginAppContainer,
   Container,
   ContainerLogin,
-  LoginButton,
   ButtonContainer,
   Form,
   PageTitle,
+  Button,
 } from './styles';
 
 export default function Login(props) {
@@ -55,11 +57,12 @@ export default function Login(props) {
   }
 
   return (
-    <>
+    <LoginAppContainer>
       <Loading isLoading={isLoading} />
       <Nav />
+      <AnimatedBackground />
       <Container>
-        <ContainerLogin>
+        <ContainerLogin className="login-container">
           <PageTitle>Login</PageTitle>
           <Form onSubmit={handleSubmit}>
             <section>
@@ -81,14 +84,14 @@ export default function Login(props) {
               </label>
             </section>
             <ButtonContainer>
-              <LoginButton type="submit">Login</LoginButton>
-              <LoginButton onClick={() => Navigate('/register')} type="button">
+              <Button type="submit">Login</Button>
+              <Button onClick={() => Navigate('/register')} type="button">
                 Register
-              </LoginButton>
+              </Button>
             </ButtonContainer>
           </Form>
         </ContainerLogin>
       </Container>
-    </>
+    </LoginAppContainer>
   );
 }
