@@ -120,7 +120,7 @@ export const AboutMeSection = styled.div`
   }
 
   @media (min-height: 501px) and (max-height: 970px) and (min-width: 361px) and (max-width: 980px) {
-    height: 600px;
+    height: 500px;
     width: 300px;
     gap: 20px;
     padding-top: 15px;
@@ -128,7 +128,7 @@ export const AboutMeSection = styled.div`
   }
 
   @media (min-height: 700px) and (max-height: 800px) and (min-width: 350px) and (max-width: 450px) {
-    height: 600px;
+    height: 500px;
     width: 300px;
     gap: 20px;
     padding-top: 15px;
