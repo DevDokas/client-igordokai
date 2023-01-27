@@ -157,7 +157,7 @@ export const ButtonContainer = styled.div`
   display: flex;
   height: 3vh;
   gap: 1vw;
-  margin-top: 2vh;
+  margin-top: 3.5vh;
 `;
 
 export const Button = styled.button`

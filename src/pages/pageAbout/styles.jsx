@@ -82,7 +82,7 @@ export const ContainerAboutMe = styled.div`
   }
 
   @media (min-height: 501px) and (max-height: 970px) and (min-width: 361px) and (max-width: 980px) {
-    margin-top: 300px;
+    margin-top: 350px;
     height: 500px;
     display: flex;
     flex-direction: column-reverse;
@@ -90,7 +90,7 @@ export const ContainerAboutMe = styled.div`
   }
 
   @media (min-height: 700px) and (max-height: 800px) and (min-width: 350px) and (max-width: 450px) {
-    margin-top: 300px;
+    margin-top: 350px;
     height: 500px;
     display: flex;
     flex-direction: column-reverse;
