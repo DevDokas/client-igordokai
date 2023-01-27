@@ -14,7 +14,7 @@ import BZMCard from '../../../assets/bzmcard.jpg';
 
 export default function Portfolio() {
   return (
-    <ContainerPortfolio className="portfolio-container">
+    <ContainerPortfolio>
       <PortfolioCard
         className="portfolio-card"
         href="https://site-bzm-react-js-nonpwa.vercel.app/"

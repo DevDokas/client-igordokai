@@ -20,9 +20,9 @@ import ImageAboutMe from '../../../assets/aboutme.jpg';
 
 export default function AboutMe() {
   return (
-    <ContainerAboutMe className="c1">
+    <ContainerAboutMe>
       <AboutMeImage src={ImageAboutMe} />
-      <AboutMeSection className="c2">
+      <AboutMeSection>
         <AboutMeLabel>Sobre mim</AboutMeLabel>
         <AboutMeText>
           <AboutMeParagraph>

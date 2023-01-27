@@ -73,33 +73,6 @@ input {
     }
   }
 
-  .about-container{
-    height: 100vh;
-    @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
-      height: 2000px;
-      width: 100vw;
-      overflow-x: hidden;
-    }
-
-    @media (min-height: 501px) and (max-height: 970px) and (min-width: 350px) and (max-width: 1430px) {
-      height: 2000px;
-      width: 100vw;
-      overflow-x: hidden;
-    }
-  }
-
-  .about-body{
-    @media (min-height: 480px) and (max-height: 500px) and (min-width: 320px) and (max-width: 360px) {
-      height: 1800px;
-      width: 100vw;
-    }
-
-    @media (min-height: 501px) and (max-height: 970px) and (min-width: 350px) and (max-width: 1430px) {
-      height: 1800px;
-      width: 100vw;
-    }
-  }
-
 `;
 
 export const GlobalContainer = styled.section`
