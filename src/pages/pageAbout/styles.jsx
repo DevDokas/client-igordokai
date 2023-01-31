@@ -26,6 +26,12 @@ export const Container = styled.div`
     width: 100vw;
     overflow: hidden;
   }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    height: 8000px;
+    width: 100vw;
+    overflow: hidden;
+  }
 `;
 
 export const AboutBody = styled.section`
@@ -62,6 +68,15 @@ export const AboutBody = styled.section`
     justify-content: center;
     gap: 60px;
   }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    height: 7600px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 150px;
+  }
 `;
 
 // About Me
@@ -95,6 +110,14 @@ export const ContainerAboutMe = styled.div`
     display: flex;
     flex-direction: column-reverse;
     gap: 50px;
+  }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    margin-top: 200px;
+    height: 2600px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 150px;
   }
 `;
 
@@ -130,9 +153,17 @@ export const AboutMeSection = styled.div`
   @media (min-height: 700px) and (max-height: 800px) and (min-width: 350px) and (max-width: 450px) {
     height: 500px;
     width: 300px;
-    gap: 20px;
+    gap: 150px;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    height: 2000px;
+    width: 1200px;
+    gap: 20px;
+    padding-top: 150px;
+    padding-bottom: 100px;
   }
 `;
 
@@ -153,6 +184,10 @@ export const AboutMeLabel = styled.label`
 
   @media (min-height: 700px) and (max-height: 800px) and (min-width: 350px) and (max-width: 450px) {
     font-size: 20px;
+    font-weight: 600;
+  }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
     font-weight: 600;
   }
 `;
@@ -179,6 +214,11 @@ export const AboutMeParagraph = styled.p`
   @media (min-height: 700px) and (max-height: 800px) and (min-width: 350px) and (max-width: 450px) {
     width: 240px;
     font-size: 12px;
+    font-weight: 600;
+  }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    width: 1000px;
     font-weight: 600;
   }
 `;
@@ -234,6 +274,15 @@ export const SocialMediasList = styled.ul`
     gap: 50px;
     list-style-type: none;
   }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 250px;
+    list-style-type: none;
+  }
 `;
 
 export const SocialMediaItem = styled.li``;
@@ -254,6 +303,9 @@ export const SocialMediaLink = styled.a`
 
   @media (min-height: 700px) and (max-height: 800px) and (min-width: 350px) and (max-width: 450px) {
     height: 30px;
+  }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
   }
 `;
 
@@ -290,6 +342,10 @@ export const ImageContainer = styled.div`
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.3)
   );
+
+  @media (min-height: 700px) and (max-height: 800px) and (min-width: 350px) and (max-width: 450px) {
+    width: 100vw;
+  }
 `;
 
 export const AboutMeImage = styled.img`
@@ -298,6 +354,11 @@ export const AboutMeImage = styled.img`
   min-height: 200px;
   min-width: 200px;
   border-radius: 50%;
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    height: 50%;
+    width: 100%;
+  }
 `;
 
 // Technologies
@@ -378,6 +439,22 @@ export const ContainerTechnologies = styled.div`
       height: 45px;
     }
   }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    height: 285px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
+
+    a {
+      height: 175px;
+    }
+
+    img {
+      height: 175px;
+    }
+  }
 `;
 
 export const TechLinks = styled.img`
@@ -437,6 +514,15 @@ export const ContainerPortfolio = styled.div`
     height: 1250px;
     width: 300px;
   }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 130px;
+    height: 4200px;
+    width: 1200px;
+  }
 `;
 
 export const PortfolioCard = styled.a`
@@ -467,6 +553,11 @@ export const PortfolioCard = styled.a`
     height: 270px;
     width: 250px;
   }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    height: 850px;
+    width: 1000px;
+  }
 `;
 
 export const PortfolioImage = styled.img`
@@ -488,6 +579,12 @@ export const PortfolioImage = styled.img`
   @media (min-height: 700px) and (max-height: 800px) and (min-width: 350px) and (max-width: 450px) {
     height: 200px;
     width: 250px;
+  }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    height: 600px;
+    width: 900px;
+    border-radius: 3vh 3vh 0 0;
   }
 `;
 
@@ -516,6 +613,12 @@ export const CardText = styled.div`
     height: 70px;
     width: 250px;
   }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    height: 250px;
+    width: 900px;
+    border-radius: 0 0 3vh 3vh;
+  }
 `;
 
 export const PortfolioAbout = styled.p`
@@ -533,6 +636,10 @@ export const PortfolioAbout = styled.p`
   }
 
   @media (min-height: 700px) and (max-height: 800px) and (min-width: 350px) and (max-width: 450px) {
+    height: 250px;
+  }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
     height: 250px;
   }
 `;

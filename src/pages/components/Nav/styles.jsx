@@ -25,6 +25,10 @@ export const NavContainer = styled.header`
       width: 100%;
     }
   }
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    width: 100vw;
+  }
 `;
 
 export const NavBar = styled.nav`
@@ -38,6 +42,10 @@ export const NavBar = styled.nav`
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.3)
   );
+
+  @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
+    width: 100vw;
+  }
 `;
 
 export const NavMenu = styled.ul`
