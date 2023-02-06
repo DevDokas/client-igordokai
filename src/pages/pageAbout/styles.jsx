@@ -112,6 +112,10 @@ export const ContainerAboutMe = styled.div`
     gap: 50px;
   }
 
+  @media (height: 720px) and (width: 1080px) {
+    margin-top: 50px;
+  }
+
   @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
     margin-top: 200px;
     height: 2600px;

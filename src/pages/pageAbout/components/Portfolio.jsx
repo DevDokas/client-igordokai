@@ -11,13 +11,16 @@ import {
 
 import IgorDCard from '../../../assets/facebookcard.jpg';
 import BZMCard from '../../../assets/bzmcard.jpg';
+import CalculadoraCard from '../../../assets/calculadoracard.jpg';
+import ToDoCard from '../../../assets/todocard.jpg';
 
 export default function Portfolio() {
   return (
     <ContainerPortfolio>
       <PortfolioCard
         className="portfolio-card"
-        href="https://site-bzm-react-js-nonpwa.vercel.app/"
+        href="https://bzmtextil.vercel.app"
+        target="_blank"
       >
         <PortfolioImage src={BZMCard} />
         <CardText>
@@ -27,21 +30,31 @@ export default function Portfolio() {
           </PortfolioAbout>
         </CardText>
       </PortfolioCard>
-      <PortfolioCard className="portfolio-card" href="">
-        <PortfolioImage src={IgorDCard} />
+      <PortfolioCard
+        className="portfolio-card"
+        href="https://calculadora-dokai.vercel.app"
+        target="_blank"
+      >
+        <PortfolioImage src={CalculadoraCard} />
         <CardText>
-          <PortfolioLabel>Novo projeto</PortfolioLabel>
-          <PortfolioAbout>Aguarde por novidades. 😝</PortfolioAbout>
+          <PortfolioLabel>Calculadora</PortfolioLabel>
+          <PortfolioAbout>Web App feito usando React Hooks</PortfolioAbout>
         </CardText>
       </PortfolioCard>
-      <PortfolioCard className="portfolio-card" href="">
-        <PortfolioImage src={IgorDCard} />
+      <PortfolioCard
+        className="portfolio-card"
+        href="https://lista-de-tarefas-dokai.vercel.app"
+        target="_blank"
+      >
+        <PortfolioImage src={ToDoCard} />
         <CardText>
-          <PortfolioLabel>Novo projeto</PortfolioLabel>
-          <PortfolioAbout>Aguarde por novidades. 😝</PortfolioAbout>
+          <PortfolioLabel>Lista de Tarefas</PortfolioLabel>
+          <PortfolioAbout>
+            Lista de Tarefas usando React Hooks e Local Storage
+          </PortfolioAbout>
         </CardText>
       </PortfolioCard>
-      <PortfolioCard className="portfolio-card" href="">
+      <PortfolioCard className="portfolio-card">
         <PortfolioImage src={IgorDCard} />
         <CardText>
           <PortfolioLabel>Novo projeto</PortfolioLabel>

@@ -43,6 +43,10 @@ export const NavBar = styled.nav`
     rgba(255, 255, 255, 0.3)
   );
 
+  @media (height: 720px) and (width: 1080px) {
+    width: 35vw;
+  }
+
   @media (min-height: 2900px) and (max-height: 3200px) and (min-width: 1300px) and (max-width: 1500px) {
     width: 100vw;
   }
